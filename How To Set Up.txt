@@ -1,0 +1,79 @@
+Hello thank you for downloading this MTMSync. This is a Tool made by using window commands and runs using .bat! 
+Please be sure to go in order and setup correctly to use this tool!
+
+To get started
+Go into the Folder called "Main" and under that folder find the folder called "Bats"
+
+MTMSync/Main/Bats
+
+1. 
+Right click on MTMSync_Setup.bat
+2.
+Click edit in Notepad or in a diffrent program
+3.
+You will see this (schtasks /create /sc hourly /mo 1 /tn "MTMSyncFilesTask" /tr "File Path Of MTMSync.bat")
+4.
+Change "File Path Of MTMSync.bat" > to the location of the MTMSync.bat for exsample "C:\Users\mtm\Desktop\MTMSync\Main\Bats\MTMSync.bat"
+5.
+After go into the Folder called "Main" and under that folder find the folder called "Bats"
+
+MTMSync/Main/Bats
+6.
+Right click on MTMSync.bat
+7.
+Click edit in Notepad or in a diffrent program
+8.
+You will see:
+
+@echo off
+
+#1
+robocopy "source1" "destination1" /e /fft
+
+#Put in source2 the destination of destination1
+#Put in destination2 the destination of source1
+
+#2
+robocopy "source2" "destination2" /e /fft
+
+
+
+# exsample
+#robocopy "E:\File_Dog" "E:\File_Cat" /e /fft
+#robocopy "E:\File_Cat" "E:\File_Dog" /e /fft
+
+
+
+
+9. 
+In #1 Change "source1" > To the location/Source File "E:\All my stuff"
+10.
+Change "destination1" To the location/Destination of where you wanted files to go! Exsample "E:\Put here"
+11. 
+In #2 do the following
+#Put in source2 the destination of destination1
+#Put in destination2 the destination of source1
+12. 
+Click up at the top File Save or just do ctrl+s
+
+12. Then run MTMSync_Setup.bat
+
+13. Then run MTMSync.bat
+
+
+
+NOT REQUIRED STEPS
+
+If you wanted to copy more and paste this
+
+(robocopy "source1" "destination1" /e /fft)
+&
+(robocopy "source2" "destination2" /e /fft)
+
+and follow steps 6-13
+
+To know when a task has ran add the following!
+
+(msg * "MTMSync has ran!")
+
+Need more help contact me via my website or Discord MeTheMystical or email MTM-Work@proton.me

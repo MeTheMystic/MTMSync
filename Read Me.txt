@@ -1,0 +1,3 @@
+I do not own the Microsoft tools just made a simple way of auto backing up files from one area to a diffrent area! 
+
+To Set up go read the txt called "How To Set Up" or on website https://methemystical.net/mtmsync 
